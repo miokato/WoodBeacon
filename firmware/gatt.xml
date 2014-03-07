@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <service uuid="1800">
+    <description>Generic Access Profile</description>
+    <characteristic uuid="2a00">
+      <properties read="true" const="true"/>
+      <value>iBeacon</value>
+    </characteristic>
+    <characteristic uuid="2a01">
+      <properties read="true" const="true"/>
+      <value type="hex">0200</value>
+    </characteristic>
+  </service>
+
+  <service uuid="180a">
+    <description>Device Information</description>
+    <characteristic uuid="2a29">
+      <properties read="true" const="true" />
+      <value>Bluegiga BLE112</value>
+    </characteristic>
+    <characteristic uuid="2a24">
+      <properties read="true" const="true" />
+      <value>112</value>
+    </characteristic>
+    <characteristic uuid="2a26">
+      <properties read="true" const="true" />
+      <value>0.0.1</value>
+    </characteristic>
+    <characteristic uuid="2a27">
+      <properties read="true" const="true" />
+      <value>1.0</value>
+    </characteristic>
+  </service>
+
+  <service uuid="06F5641F-4340-47D8-BB87-E5121946E7B7">
+    <description>iBeacon conf</description>
+    <characteristic uuid="77138B0E-0EBA-4171-B3D7-0EE39E37BEFD" id="xgatt_ibeacon_uuid">
+      <properties const="true" />
+      <value type="hex">e2c56db5dffb48d2b060d0f5a71096e0</value>
+    </characteristic>
+    <characteristic uuid="BFC90CD7-195F-4478-90A9-1451F1976F9D" id="xgatt_ibeacon_major">
+      <properties const="true" />
+      <value type="hex">00</value>
+    </characteristic>
+    <characteristic uuid="8A34E41A-4462-45CF-8B60-D57BEBD28B20" id="xgatt_ibeacon_minor">
+      <properties const="true" />
+      <value type="hex">00</value>
+    </characteristic>
+    <characteristic uuid="4109997D-D141-4FF1-A254-30AEFC33D394" id="xgatt_ibeacon_tx_pwr">
+      <properties const="true" />
+      <value type="hex">c6</value>
+    </characteristic>
+  </service>
+
+</configuration>
